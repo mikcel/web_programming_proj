@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Pet Heaven-Dog & Cat Adoption</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="css/styleAdoption.css"/>
+		<script src="script/scriptPetHeaven.js" type="text/javascript"></script>
+	</head>
+	<body onload="setDate()">
+		<header>
+			<a href="#homePage"><img src="images/logo.png" alt="logo" class="logo"/></a>
+			<!--Pets:http://4.bp.blogspot.com/-akRxXGd3MXo/UqxJcyhQFgI/AAAAAAAAA-Q/9fO5ypoxp5I/s1600/Cat_And_Dog_Cartoon_Image-918.png
+				Clouds:http://www.sanjosefunerales.com/wp-content/uploads/2015/02/SanJose_Slider5_nube2.png
+			-->
+			<span class="name">Pet Heaven
+				<span id="date"></span>
+				<span id="time"></span>
+			</span>
+		</header>
+		<aside>
+			<ul class="menu">
+				<li><a href="#homePage">Home</a></li>
+				<li><a href="pets.html#browse">Browse Available Pets</a></li>
+				<li id="findpet">Find a pet
+					<ul class="pet">
+						<li><a href="#dog">Dog</a></li>
+						<li><a href="#cat">Cat</a></li>
+					</ul>
+				</li>
+				<li><a href="#dcare">Dog Care</a></li>
+				<li><a href="#ccare">Cat Care</a></li>
+				<li><a href="#giveaway">Have a pet to give away</a></li>
+				<li><a href="#contact">Contact Us</a></li>
+			</ul>
+		</aside>
+		<section id="homePage">
+			<h1>Welcome to the Pet Heaven</h1>
+			<p><span class="happy">All animals deserve a chance to live. </span><br /><br />The Pet
+				Heaven is a bridge between people who wants to adopt
+				and these adorable dogs and cats that do not ask more than love and a home.</p>
+				<table class="searching">
+					<tr>
+						<td class="searchtext">
+						<br/>
+							You want to find a pet with specific characteristics? You only want to adopt 
+							a pet without constraint?<br />
+							We provide you with a specific search tool for these purposes. We try our best to
+							match you with the ideal best friend so that both of you live without problem.
+							<ul>
+								<li>Go find all available pets for adoption by navigaing to Browse Available Pets in the left-side menu
+								 or <a href="pets.html#browse">click here</a>.</li>
+								<li>If you want to find a dog <a href="#dog">click here</a> or navigate to Find a pet > 
+									'Dog' page on the left menu. </li>
+								<li>What a cat? No problem !!! <a href="#cat">Click here</a> or navigate to Find a pet > 
+									'Cat' page on the left menu.</li>
+							</ul>
+							<span class="happy">Happy Searching!!!</span><br/><br/>
+						</td>
+						<td class="searchimg">
+							<img src="images/idealpetbutton.jpg" alt="search" /><br />
+							http://www.miamidade.gov/animals/images/idealpetbutton.jpg
+						</td>
+					</tr>
+				</table><br />
+				<div class="getadvice">
+					<img src="images/gethealthyhappy.png" alt="takecare"/>
+					<!--http://3.bp.blogspot.com/-sjlGb8APcx8/U_pBGtqkYPI/AAAAAAAAQ_g/YmcExDEdPss/s1600/gethealthyhappy.png-->
+					Taking care of your pet is part of your responsibility as master.
+					If you need some help and advices, do not worry. We are here to help you.
+					All you need from feeding to grooming, we direct you to websites that offer helpful advices
+					or tips for a healthier pet.
+					<br />
+					<ul>
+						<li><a href="#dcare">Click Here</a> or go to 'Dog Care' on the side menu for dog care tips and advices.</li>
+						<li>You have a cat to take care <a href="#ccare">click here</a> to get you going or navigate to 'Cat Care' 
+						on the side menu</li>
+					</ul>
+				</div>
+				<div class="info">
+					We also let you give a pet to adopt such that other people get a chance to have a best friend.
+					<br /><br />
+					If you have a problem with our website, please feel free to contact us. 
+					For this purpose, either go on 'Contact Us' page on the left-side menu or <a href="#contact">click here</a>.
+				</div>
+				<br />
+			<span class="happy">Adopt!!! Your new family member is waiting for you.</span><br /><br />
+		</section>
+		<footer>
+			<div class="privacy"><a href="#privacy">Privacy/Disclaimer Statement</a></div>
+		</footer>
+		
+		<section id="dog">
+			<h3>Find your ideal dog to adopt</h3>
+			<div class="explain">
+				<p>The step by step process to find your perfect best friend starts here!!
+				Gather all your information and tell us which dog you want in terms of breed, age, gender and easygoing.
+				Start your search -->
+				<br />
+				</p><br />
+			</div>
+			<div class="petsearch">
+				<form onsubmit="return checkForm('dog')">
+					<label>Complete your search option below to get you going.<br />
+						<span class="italic">Tip: Be the more specific you can for a perfect match.</span></label><br /><br />
+					<label>Breed: 
+						<select>
+							<option value="BG">Beagle</option>
+							<option value="BX">Boxer</option>
+							<option value="BL">Bulldog</option>
+							<option value="CKC">Cavalier King Charles Spaniel</option>
+							<option value="CH">Chihuahua</option>
+							<option value="DA">Dachhund</option>
+							<option value="DL">Dalmatian</option>
+							<option value="GS">German Shepherd</option>
+							<option value="GP">German Shorthaired Pointer</option>
+							<option value="GR">Golden Retriever</option>
+							<option value="LR">Labrador Retriever</option>
+							<option value="PO">Poodle</option>
+							<option value="RO">Rottweiler</option>
+							<option value="SH">Siberian Huskie</option>
+							<option value="YT">Yorkshire Terriers</option>
+							<option value="breednotmatter" selected>Does not matter</option>
+						</select>
+					</label><br /><br />
+					<label>Preferred age of dog: 
+						<select>
+							<option value ="puppy">Puppy: 0-12 months</option>
+							<option value="ado">Adolescent: 1-12 years</option>
+							<option value="adult">Adult: 2-7 years </option>
+							<option value="senior">Senior: 7-14 years</option>
+							<option value="geria">Geriatric: 14+ years</option>
+							<option value="agenotmatter" selected>Does not matter</option>
+						</select>
+					</label><br /><br />
+					<label>Gender <br /></label>
+					<label>&nbsp;<input type="radio" name="gender" value="male"/> Male</label>
+					<label><input type="radio" name="gender" value="female"/> Female</label>
+					<label><input type="radio" name="gender" value="gendnotmatter"/> Does not matter</label><br /><br />
+					<label>Gets Along with</label><br />
+					<label>&nbsp;<input type="checkbox" name="alongdog" id="alongDog"/> Other Dogs</label>
+					<label><input type="checkbox" name="alongchild" id="alongChild"/> Small Children</label><br /><br />
+					<input type="submit" value="Submit"/>
+					<input type="reset">
+				</form>
+			</div>
+		</section>
+		<section id="cat">
+			<h3>Find the ideal cat to adopt</h3>
+			<div class="explain">
+				<p>The step by step process to find your perfect best friend starts here!!
+				Gather all your information and tell us which cat you want in terms of breed, age, gender and easygoing.
+				Start your search --></p></div>
+			<div class="petsearch">
+				<form onsubmit = "return checkForm('cat')">
+					<label>Complete your search option below to get you going.<br />
+				Be the more specific you can for a perfect match.</label><br /><br />
+					<label>Breed: 
+						<select>
+							<option value="AB">Abyssinian</option>
+							<option value="AS">American Shorthair</option>
+							<option value="BM">Birman</option>
+							<option value="EX">Exotic</option>
+							<option value="MC">Maine Coon</option>
+							<option value="OR">Oriental</option>
+							<option value="PS">Persian</option>
+							<option value="RG">Ragdoll</option>
+							<option value="SM">Siamese</option>
+							<option value="SP">Sphynx</option>
+							<option value="breednotmatter" selected>Does not matter</option>
+						</select>
+					</label><br /><br />
+					<label>Preferred age of cat: 
+						<select>
+							<option value="kitten">Kitten: 0-1 year</option>
+							<option value="teen">Teen: 2-4 years</option>
+							<option value="adult">Adult: 4-6 years</option>
+							<option value="senior">Senior: 7+ years</option>
+							<option value="agenotmatter" selected>Does not matter</option>
+						</select>
+					</label><br /><br />
+					<label>Gender <br /></label>
+					<label>&nbsp;<input type="radio" name="gender" value="male"/> Male</label>
+					<label><input type="radio" name="gender" value="female"/> Female</label>
+					<label><input type="radio" name="gender" value="gendnotmatter"/> Does not matter</label><br /><br />
+					<label>Gets Along with</label><br />
+					<label><input type="checkbox" name="alongcat" id="alongCat"/> Other Cats</label>
+					<label><input type="checkbox" name="alongchild" id="alongChildCat"/> Small Children</label><br /><br />
+					<input type="submit" value="Submit"/>
+					<input type="reset">
+				</form>
+			</div>
+		</section>
+		<section id="dcare">
+			<h3>Take a look at tips and advices to keep your canine companion
+				happy and healthy</h3>
+				You are a new dog parent and need advices? Or you want your dog to have a healthy lifestyle?<br />
+				Here are some detailed website to have a wonderful canine experience:
+			<ul class="getstart">
+				<li>Feeding<br />
+					DogFoodAdvisor.com is a very good website to get more information about dog feeding.<br /> 
+					Give it a try: <a href="http://www.dogfoodadvisor.com/">www.dogfoodadvisor.com</a><br /><br />
+				</li>
+				<li>Exercise<br />
+					dogguide.net gives you detailed information on how to exercise each dog breed.<br />
+					Take a look at this website for a healthy dog: <a href="http://www.dogguide.net">www.dogguide.net</a><br /><br />
+				</li>
+				<li>Grooming<br />
+					Go through the handy tips of <a href="https://www.aspca.org/pet-care/dog-care/dog-grooming-tips">aspca.org</a> to keep your buddy clean.
+				</li>
+			</ul>
+		</section>
+		<section id="ccare">
+			<h3>Take a look at tips and advices to keep your feline companion
+				happy and healthy</h3>
+				You are a new cat parent and need advices? Or you want your cat to have a healthy lifestyle?<br />
+				Here are some detailed website to have a wonderful experience with your cat:
+			<ul class="getstart">
+				<li>Feeding<br />
+					Aspca.org is a very helpful website to get detailed information about cat nutrition for different ages.<br /> 
+					Give it a try: <a href="https://www.aspca.org/pet-care/cat-care/cat-nutrition-tips">www.aspca.org</a><br /><br />
+				</li>
+				<li>Exercise<br />
+					As humans, cats need exercise to keep them fit and healthy.<br />
+					<a href="http://www.petmd.com/cat/wellness/evr_ct_exercising_with_your_cat_a_how_to_guide">Petmd.com</a> gives very handy tips on how to exercise with your cat. Creative activities are also proposed.<br /><br />
+				</li>
+				<li>Grooming<br />
+					Take a look the grooming tips offered by <a href="https://www.lovethatpet.com/cats/grooming/grooming-tips/">lovethatpet.com</a>
+					to keep your feline clean and healthy.
+				</li>
+			</ul>
+		</section>
+		<section id="giveaway">
+			<h1>Give a pet</h1>
+			<form onsubmit="return checkGiveAway()">
+				<div id="imgHand"><!--http://www.petful.com/wp-content/uploads/2011/08/14995933929_c073daa47b_k.jpg--></p></div>
+				<fieldset>
+					<legend>Pet's Details</legend>
+					<label>Choose your pet:</label>&nbsp;
+					<label><input type="radio" name="pet" value="dog" id="dogpet"/> Dog</label>
+					<label><input type="radio" name="pet" value="cat" id="catpet"/> Cat</label><br />
+					<br />
+					<label>Breed </label><br/>
+					<label>Dog:&nbsp;
+						<select>
+							<option value="BG">Beagle</option>
+							<option value="BX">Boxer</option>
+							<option value="BL">Bulldog</option>
+							<option value="CKC">Cavalier King Charles Spaniel</option>
+							<option value="CH">Chihuahua</option>
+							<option value="DA">Dachhund</option>
+							<option value="DL">Dalmatian</option>
+							<option value="GS">German Shepherd</option>
+							<option value="GP">German Shorthaired Pointer</option>
+							<option value="GR">Golden Retriever</option>
+							<option value="LR">Labrador Retriever</option>
+							<option value="PO">Poodle</option>
+							<option value="RO">Rottweiler</option>
+							<option value="SH">Siberian Huskie</option>
+							<option value="YT">Yorkshire Terriers</option>
+							<option value="mix" selected>Mix</option>
+						</select>
+					</label>&nbsp;
+					<label>Cat:&nbsp;
+					<select>
+						<option value="AB">Abyssinian</option>
+						<option value="AS">American Shorthair</option>
+						<option value="BM">Birman</option>
+						<option value="EX">Exotic</option>
+						<option value="MC">Maine Coon</option>
+						<option value="OR">Oriental</option>
+						<option value="PS">Persian</option>
+						<option value="RG">Ragdoll</option>
+						<option value="SM">Siamese</option>
+						<option value="SP">Sphynx</option>
+						<option value="mix" selected>Mix</option>
+					</select>
+					</label><br /><br />
+					<label>Age </label><br/>
+					<label>Dog:&nbsp;
+						<select>
+							<option value ="puppy">Puppy: 0-12 months</option>
+							<option value="ado">Adolescent: 1-2 years</option>
+							<option value="adult">Adult: 2-7 years </option>
+							<option value="senior">Senior: 7-14 years</option>
+							<option value="geria">Geriatric: 14+ years</option>
+						</select>	
+					</label>&nbsp;
+					<label>Cat:&nbsp;
+						<select>
+							<option value="kitten">Kitten: 0-1 year</option>
+							<option value="teen">Teen: 2-4 years</option>
+							<option value="adult">Adult: 4-6 years</option>
+							<option value="senior">Senior: 7+ years</option>
+						</select>
+					</label><br /><br />
+					<label>Gender:</label>
+					<label><input type="radio" name="gender" value="male" id="petmale"/> Male</label>
+					<label><input type="radio" name="gender" value="female" id="petfem" /> Female</label>
+					<br /><br />
+					<label>Gets Along with:</label>
+					<label><input type="checkbox" name="alongdog" value="alongdog" id="alongdog"/> Other dogs</label>
+					<label><input type="checkbox" name="alongcat" value="alongcat" id="alongcat"/> Other cats</label>
+					<label><input type="checkbox" name="none" value="none" id="alongnone"/> None</label>
+					<br /><br />
+					<label><input type="checkbox" name="alongchild" value="alongchild"/>&nbsp;Suitable for a family with small children</label><br /><br />
+					<label>Give more details of pet putting for adoption: <br /><textarea name="detailsanimal" id="detailsanimal"></textarea></label><br />
+				</fieldset><br />
+				<fieldset>
+					<legend>Owner's details</legend>
+					<label>Owner's Family Name: &nbsp;<input type="text" name="ownername" id="familyname"/></label><br/><br/>
+					<label>Owner's Given name: &nbsp;<input type="text" name="ownergiven" id="givenname"/></label><br /><br />
+					<label>Owner's Email: &nbsp;<input type="text" name="owneremail" id="email"/></label><br />
+				</fieldset><br />
+				<input type="submit" value="Submit" />
+				<input type="reset" value="Clear"/><br /><br />
+			</form>
+		</section>
+		<section id="contact">
+			<h3>Having problem with the website, below are our contact information</h3>
+			<div>
+				Name: CÉLINE Mikiël Yohann<br />
+				ID: 40009948<br />
+				Email: mikcel@live.com<br />
+				<br />
+				Please feel free to contact us if any issues happen.
+			</div>
+		</section>
+		<section id="privacy">
+			<h3>Privacy/Disclaimer Statement</h3>
+			<div>
+				All personal information that you provide on Pet Heaven will be used
+				exclusively for the website's purposes will never be revealed to any third parties.
+				Once you provide your information, it is kept in a password-protected server where
+				unauthorized access is denied.In case data you provided need to be modified, feel free to contact us.
+				<br /><br />
+				While we ensure the protection of data you provide, we do not hold ourselves liable 
+				of any wrong information provided by a pet owner. Every effort are made to verify the
+				data being provided. Nevertheless, it is quite impossible to completely verify these data.
+				<br /><br />
+				We try our best to keep this website up to date and with accurate information. However, 
+				we do not hold ourselves reposonsible for any technical issues that may occur beyond our control.
+				<br /><br />
+				Pet Heaven pages contain some links to other websites. Please be aware that in no case
+				we are liable for any changes on these website or for any information provided to them.
+				They are totally independent from us and are used only for reference. Hence, our team
+				will not take into account issues you obtained with these referenced websites.				
+			</div>
+		</section>
+	</body>
+</html>

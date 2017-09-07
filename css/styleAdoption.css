@@ -1,0 +1,432 @@
+/*header*/
+header{
+	position:absolute;
+	top:0%;
+	background-color:#FFF5EE;
+	border-bottom: .2em solid #1E90FF;
+	width:100%;
+	height:7.6%;
+	padding:0%;
+	white-space:nowrap;
+	text-align:center;
+}
+.name{
+	color:#1E90FF;
+	font-size:3em;
+	font-family:Goudy Old Style, "Times New Roman", sans-serif;
+	vertical-align:middle;
+}
+.logo{
+	height:100%;
+	width:14%;
+	margin:0%;
+	position:absolute;
+	left:2%;
+	bottom:4%;
+}
+#time, #date{
+	font-size:.35em;
+	position:absolute;
+	right:0%;
+	top:10%;
+}
+#time{
+	top:50%;
+}
+/*nav menu (left-side)*/
+aside{
+	position:absolute;
+	background-color:#1E90FF;
+	width:19%;
+	height:92.1%;
+	margin:0%;
+	padding:0%;
+	left:0%;
+	bottom:0%;
+	white-space:nowrap;
+	color:white;
+	font-family: Candara, "Times New Roman", sans-serif;
+	font-size:110%;
+}
+.menu{
+	margin:0%;
+	padding:0%;
+	list-style-type:none;
+	line-height:220%;
+	text-indent:8%;
+}
+.pet{
+	list-style-type:none;
+}
+.menu li:not(#findpet):hover{
+	background-color:white;
+}
+.menu li:not(#findpet):hover a{
+	color:#1E90FF;
+}
+.menu li a{
+	text-decoration:none;
+	color:white;
+	margin:0;
+	display:block;
+	width:100%;
+	height:100%;
+}
+body{
+	margin:0%;
+}
+/*footer*/
+footer{
+	width: 81%;
+	height: 10%; 
+	background-color:#808080;
+	position:absolute;
+	left:19%;
+	bottom:0%;
+	text-align:center;
+	white-space:nowrap;
+}
+footer a:hover{
+	color:black;
+}
+/*privacy*/
+.privacy{
+	padding-top:2%;
+}
+.privacy a{
+	color:white;
+}
+/*content*/
+section{
+	position:absolute;
+	width:79%;
+	height:82.3%;
+	background-color:#FFD1BA;
+	left:19%;
+	top:7.9%;
+	overflow:auto;
+	padding-left:2%;
+}
+/*home page*/
+#homePage{
+	font-family:Candara, "Times New Roman", sans-serif;
+}
+
+#homePage h1, a{
+	color:#0169CE;
+}
+.searching {
+	position:relative;
+	left:0%;
+	height:30%;
+	width:98%;
+	border-bottom: 2px dashed #1E90FF; 
+	border-top: 2px dashed #1E90FF; 
+}
+.searchtext ul{
+	list-style-image:url("../images/paw.png");
+	/*http://icons.mysitemyway.com/legacy-icon/011447-blue-jelly-icon-animals-animal-cat-print/#etc-download-box*/
+}
+.searchimg{
+	font-size:60%;
+	background-position:center;
+	background-repeat:no-repeat;
+	padding-left:3%;
+	width:30%;
+}
+.happy{
+	font-size:120%;
+	font-weight:bold;
+	font-style:italic;
+}
+.getadvice{
+	width:96%;
+	height:25%;
+	border-bottom:2px dashed #1E90FF;
+	padding-bottom:2%;
+	margin-bottom:2%;
+	padding-right:2%;
+	overflow:auto;
+}
+.getadvice img{
+	float:left;
+	margin-right:2%;
+}
+.getadvice ul{
+	list-style-position:inside;
+	list-style-image:url("../images/paw.png");
+	/*http://icons.mysitemyway.com/legacy-icon/011447-blue-jelly-icon-animals-animal-cat-print/#etc-download-box*/
+}
+.info{
+	width:98%;
+}
+
+/*Find a dog*/
+#dog{
+	background-image:url("../images/search.jpg");
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+#dog h3{
+	font-family:Candara, "Times New Roman", sans-serif;
+	color:#1E90FF;
+	padding-left:2%;
+}
+.petsearch{
+	position:absolute;
+	left:50%;
+	bottom:20%;
+	padding:2%;
+	border: 10px groove #1E90FF;
+}
+.explain{
+	width:30%;
+	position:absolute;
+	font-size:110%;
+	top:12%;
+	padding:2%;
+}
+.explain p{
+	font-family:Candara, "Times New Roman", sans-serif;
+	color:#1E90FF;
+}
+.italic{
+	font-style:italic;
+}
+/*Find a cat page*/
+#cat{
+	background-image: url("../images/catcomputer.jpg");
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+#cat h3{
+	font-family:Candara, "Times New Roman", sans-serif;
+	color:#1E90FF;
+	padding-left:2%;
+}
+/*Dog & cat care page*/
+#dcare{
+	overflow:auto;
+}
+.getstart li a{
+	color: #0169CE;
+}
+.getstart{
+	list-style-type:square;
+}
+/*Give away page*/
+#giveaway{
+	font-family:Candara, "Times New Roman", sans-serif;
+}
+
+#giveaway #message{
+	color:#1E90FF;
+	font-size:1em;
+	font-weight:bold;
+	text-align:center;
+}
+
+#giveaway h1{
+	text-align:center;
+	color:#0169CE;
+}
+
+#giveaway select, input[type="text"],textarea{
+	border:none;
+	padding:.5% .5%;
+	border-radius:4%;
+	background-color:#f1f1f1;
+}
+
+#giveaway textarea{
+	width:50%;
+}
+
+#giveaway input[type="submit"],input[type="reset"]{
+	width:23%;
+	margin-left:2%;
+	padding:.5% .5%;
+}
+
+#giveaway legend{
+	font-weight:bold;
+}
+#giveaway fieldset{
+	width:50%;
+}
+#imgHand{
+	position:absolute;
+	left:57%;
+	top:38%;
+	width:40%;
+	height:70%;
+	background-image:url('../images/handing.jpg');
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+/*Create an account page*/
+#createAccount h2{
+	text-align:center;
+}
+#createAccount div{
+	position:absolute;
+}
+#createAccount .specs{
+	width:35%;
+	left:10%;
+	top:19%;	
+}
+#createAccount .specs ul{
+	overflow:hidden;
+}
+#createAccount .image{
+	height:35%;
+	width:25%;
+	float:left;
+}
+
+#createAccount .emph{
+	font-weight:bold;
+}
+#createAccount table{
+	position:absolute;
+	top:20%;
+	left:50%;
+	width:40%;
+	border-left: 1px solid black;
+}
+#createAccount tr{
+	line-height:300%;
+}
+#createAccount td{
+	padding-left:15%;
+}
+#createAccount .text{
+	padding-left:10%;
+}
+#createAccount input[type="text"],input[type="password"]{
+	line-height:220%;
+	border:none;
+	background-color:seashell;
+}
+#createAccount button{
+	font-size:95%;
+}
+#createAccount .buttons td{
+	text-align:center;
+	padding:0%;
+}
+#createAccount .Register{
+	top:60%;
+	left:56.5%;
+	font-weight:bold;
+	color:#1E90FF;
+}
+#createAccount .error{
+	position:absolute;
+	top:60%;
+	left:62%;
+	font-weight:bold;
+	text-align:center;
+	color:red;
+}
+/* Login Page */
+#login h2{
+	text-align:center;
+}
+#login div{
+	position:relative;
+	text-align:center;
+	width:40%;
+	left:31%;
+}
+#login table{
+	position:relative;
+	left:31%;
+	top:23%;
+	width:40%;
+	border-top: 1px ridge black;
+}
+#login tr{
+	line-height:300%;
+}
+#login td{
+	padding-left:15%;
+}
+#login .text{
+	padding-left:10%;
+}
+#login input[type="text"],input[type="password"]{
+	line-height:220%;
+	border:none;
+	background-color:seashell;
+}
+#login button{
+	font-size:95%;
+}
+#login .buttons td{
+	text-align:center;
+	padding:0%;
+}
+#login .error{
+	position:absolute;
+	top:60%;
+	left:32%;
+	font-weight:bold;
+	text-align:center;
+	color:red;
+}
+/*browsepet*/
+#browsePet h1{
+	text-align:center;
+	color:#0169CE;
+}
+
+#browsePet table{
+	margin: 3% auto;
+	height:15%;
+	width: 72%;
+	border-collapse:collapse;
+}
+
+.details td{
+	width:18%;
+	border-bottom:.15em dashed #1E90FF;
+	padding:1% 0%;
+}
+
+.interested{
+	border-radius:3%;
+	background-color:#1E90FF;
+	color:white;
+	width:100%;
+	border:.2em solid #1E90FF;
+	font-size:1em;
+	transition-duration:0.5s;
+}
+
+.interested:hover{
+	background-color:white;
+	color:black;
+}
+
+.infoB{
+	font-weight:bold;
+}
+
+.more{
+	vertical-align:top;
+}
+
+#browsePet .new{
+	position:relative;
+	left:14%;
+	width:20%;
+	font-weight:bold;
+}
+#browsePet .top{
+	position:relative;
+	left:66%;
+	width:20%;
+	font-weight:bold;
+}
